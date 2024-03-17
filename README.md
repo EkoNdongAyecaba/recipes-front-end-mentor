@@ -8,6 +8,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [Screenshot](#screenshot)
+      - [Phone view](#phone-view)
+      - [Laptop view](#laptop-view)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -15,9 +17,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 The intention of the practice was to learn about some things like 
@@ -25,17 +25,21 @@ The intention of the practice was to learn about some things like
 - How to create a responsive website
 - How to style a table
 - Hw to deal with different fonts in a same page
+- How to deal with tables
 ### Screenshot
-
-![](./assets/images/desktop.png.jpg)
+#### Phone view
+![](./assets/images/mobile.png)
+#### Laptop view
+![](./assets/images/desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/EkoNdongAyecaba/recipes-front-end-mentor](https://github.com/EkoNdongAyecaba/recipes-front-end-mentor)
+- Live Site URL: [https://ekondongayecaba.github.io/recipes-front-end-mentor]( https://ekondongayecaba.github.io/recipes-front-end-mentor)
 
 ## My process
-
+The first thing i did when i begun with the project was to module properly the html file, adding the correct tags in the correct positions.
+After it i begun to add styles with SASS, creating some components and adding them to the page 
 ### Built with
 
 - Semantic HTML5 markup
@@ -46,51 +50,71 @@ The intention of the practice was to learn about some things like
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
+- how to customize the numbers of a list
+ ```scss
+.ol{
+    @include list();
+    list-style-type: decimal;
+    li::marker{
+        color: red;
+    }
+}
+```
+- How to use and style tables
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<table class="text-p">
+          <tr class="fil">
+            <td class="p-1">Calories</td>
+            <td class="td pl-4 pr-4">277 kcal</td>
+          </tr>
+          <tr class="fil">
+            <td class="p-1">Carbs</td>
+            <td class="td pl-4">0 g</td>
+          </tr>
+          <tr class="fil">
+            <td class="p-1">Protein</td>
+            <td class="td pl-4">20 g</td>
+          </tr>
+          <tr>
+            <td class="p-1">Fat</td>
+            <td class="td pl-4">22 g</td>
+          </tr>
+        </table>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+.tab__container{
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+    width: 100%;
+}
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+.tab{
+    table-layout: fixed;
+
+}
+
+.fil{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.td{
+    color: $primary;
+    font-weight: 700;
+}
+
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
+I will continue to increase the library, adding new colors, mixin and components
+[This is the repository where i will put the library](https://github.com/EkoNdongAyecaba/shinobi-library)
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/) - This helped me dealing with the table, and also given some details of lists. I really liked this pattern and will use it going forward.
+- [Ninja Library](https://www.youtube.com/watch?v=_kqN4hl9bGc&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb&index=1&ab_channel=NetNinja) - This is an amazing article which helped me fto understand really how Bootstrap, Tailwind or others frameworks work teaching me how i can buy my own library. I'd recommend it to anyone still learning this concept.
+- [DaniCodex](https://www.youtube.com/watch?v=xf6bH1K92ms&ab_channel=DaniCodex) - This is an amazing article which say how to deal with list numbers
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@EkoNdongAyecaba](https://www.frontendmentor.io/profile/EkoNdongAyecaba)
+- Twitter - [@EkoNdongAyecaba](https://www.twitter.com/Shiitake_EGBM)
