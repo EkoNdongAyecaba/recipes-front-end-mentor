@@ -184,6 +184,10 @@ body {
   font-weight: 700;
 }
 
+.container {
+  padding: 0;
+}
+
 @media (min-width: 900px) {
   body {
     background-color: hsl(30, 54%, 90%);
