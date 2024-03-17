@@ -9,6 +9,7 @@ img {
 
 body {
   font-family: "Young Serif", serif;
+  height: 100%;
 }
 
 .tab__container {
@@ -196,19 +197,18 @@ body {
 @media (min-width: 900px) {
   body {
     background-color: hsl(30, 54%, 90%);
-    height: 100vh;
   }
   img {
     border-radius: 13px;
   }
   .container {
     width: 700px;
-    height: 1400px;
     border-radius: 30px;
     padding: 40px;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 100px;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.4);
   }
   .td {
