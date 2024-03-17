@@ -61,10 +61,10 @@ body {
 }
 
 html, body, div, span,
-h1, h2, h3, p,
+h1, h2, p,
 a, img, s,
 b, center, ol, ul, li,
-table, tr, td,
+table, tr, td, footer, header, section,
 time {
   margin: 0;
   padding: 0;
@@ -75,6 +75,10 @@ time {
 }
 
 /* HTML5 display-role reset for older browsers */
+
+footer, header, section {
+  display: block;
+}
 
 body {
   line-height: 1;
